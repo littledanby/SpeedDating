@@ -1,0 +1,46 @@
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+
+<body>
+  <h1>About Us</h1>
+        <table border = 1>
+        <!-- <th>{{data}}</th> -->
+
+<!--          {% for key in data%}
+         
+            <tr>
+               <th> {{ key }} </th>
+               {%for value in data[key]%}
+               <td>
+                 {{value}}
+               </td>
+               {%endfor%}
+            </tr>
+            
+         {% endfor %} -->
+         <tr>
+          <td>Name</td>
+          <td>Role</td>
+          <td colspan='2'>Additional Info</td>
+         </tr>
+         {%for each in data%}
+          <tr>
+            <td>{{each[0]}}</td>
+            <td>{{each[1]}}</td>
+            {%for i in each[2:]%}<td>{{i}}</td>{% endfor %}
+          </tr>
+         {% endfor %}
+      </table>
+
+<p><a href="/home">back to homepage</a></p>
+
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+<html>
+<body>
+	<h1>Participation</h1>
+	<div id='context'>
+		<p>{{data[0]}}</p>
+	</div>
+	<table border=1>
+		<tr>
+			<td>Male ID</td>
+			<td>Female ID</td>
+			<td>Result</td>
+		</tr>
+		{% for each in data[1] %}
+		<tr>
+			<!--<td>
+			<form method="POST" action="/male">
+				<input type="submit" value="%s",{{each[0]}} name="mid"></input> 
+			</form>
+			</td> -->
+			<td>{{each[0]}}</td>
+			<td>{{each[1]}}</td>
+			<td>{{each[2]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+
+	<div>
+	<form method="POST" action="/detail">
+	<input type="radio" name="gender" value="male" checked> Male<br>
+	<input type="radio" name="gender" value="female"> Female<br>
+	<p>Input ID: <input type="text" name="id" placeholder="Male Or Female ID"></p>
+	<p><input type="submit" value="Submit"></p>
+	</form>
+	</div>
+
+
+<p><a href="/home">back to homepage</a></p>
+</body>
+</html>

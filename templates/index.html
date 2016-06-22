@@ -1,0 +1,48 @@
+<html>
+  <style>
+    body{ 
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+
+
+<body>
+<!--   <h1>Some famous Computer Scientists</h1>
+  <div>{{data}}</div>
+
+  <div>
+    {% for n in data %}
+    <div>{{n}}</div>
+    {% endfor %}
+  </div>
+
+<p><a href="another">Go to the other page</a></p>
+
+<form method="POST" action="/add">
+<p>Name of new computer scientist: <input type="text" name="name"> <input type="submit" value="Add"></p>
+</form> -->
+<div id='context'>
+  <p>{{data}}</p>
+</div>
+
+<div id="container">
+  <div id="header">
+    <font size="10">Speed Dating Management System</font>
+  </div>
+
+  <form id="researcher_login" method="POST" action="/login">
+    <p><input type="text" name="username" placeholder="Username"></p>
+
+    <input type="radio" name="role" value="Analyst" checked> Analyst<br>
+    <input type="radio" name="role" value="Host"> Host<br>
+
+    <!--<input type="text" name="role" placeholder="Role"> -->
+    <p><input type="text" name="id" placeholder="ID"></p>
+    <p><input type="submit" value="Log In"></p>
+  </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+
+<body>
+	<h1>Session {{data[0]}}</h1>
+	<div id="result">
+		<div>Date: {{data[2]}}</div>
+		<div>Scale: {{data[3]}}</div>
+		<div>Hosts:</div>
+		<div id="hosts">
+			{% for each in data[1] %}
+	    	<div>{{each}}</div>
+	    	{% endfor %}
+		</div>
+
+		<!--<div>
+			<form method="POST" action="/participation">
+				< <input type="submit" value="Participation"> 
+				<p>Input Session Number That You Want To Know The Participation Details: 
+				<input type="text" name="session_num" placeholder="session number"><input type="submit" value="Submit"></p>
+			</form>
+		</div> -->
+		<div>
+			<form method="link" action="/participation">
+				<input type="submit" value="Participation">
+			</form>
+		</div>
+
+	</div>
+	<div id="Back">
+		<li><a href="/home"><abbr title="Back">HomePage</abbr></a></li>
+	</div>
+
+</body>
+</html>
