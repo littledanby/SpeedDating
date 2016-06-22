@@ -1,10 +1,11 @@
-## SpeedDating
-===============
-# About
----------------
+# SpeedDating
+
+## About
+
 This is a website to show the data collected by a speed dating research.
-# Description
----------------
+
+## Description
+
 Login: researchers are asked to login using user name, role, and corresponding ID. After they login successfully, they are able to access the data.
 
 Home: This is the homepage with three buttons. When pressing ‘About Us’ it shows the information of researchers. When pressing ‘Result’ it show the analysis result. When pressing ‘Sessions’ you will go the the session part which will be introduced the the following.
